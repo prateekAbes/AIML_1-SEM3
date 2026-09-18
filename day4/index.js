@@ -6,7 +6,7 @@ console.log(name);
 console.log(age);
 console.log(city);
 
-let username = "itachi";
+let username = "Alex";
 
 function showName() {
     console.log(username);
@@ -24,24 +24,46 @@ console.log(fullName.length);
 console.log(fullName.toUpperCase());
 console.log(fullName.toLowerCase());
 
+// split() 
 
-let text = "JavaScript";
+let data = 'CSS , HTML , Node' ;
+let result = data.split(',') ;
 
-console.log(text.length);
-console.log(text.charAt(0));
-console.log(text.includes("Script"));
-console.log(text.startsWith("Java"));
-console.log(text.endsWith("Script"));
+console.log(result) ;
 
-let data = "Hello World";
+// include()
 
-let result = data.split(" ");
+let course = [{'hello': 'world'}, {'java': 'script'}];
 
-console.log(result);
+let date = new Date();
+
+console.log(date.getMonth());
 
 
-let course = [55 , 578 , 7465 , 986 ] ;
-let date = new Date() ;
-console.log(
-    "Month : " , date.getMonth() +1 
-) ; 
+console.log(Math.PI);
+
+console.log(Math.max(1,2));
+
+console.log(Math.min(1,2));
+
+console.log(Math.ceil(12.34));
+
+console.log(Math.floor(123.56));
+
+function show() {
+        console.log('Object e details:');
+        console.log(this.name);
+        console.log(this.age);
+        console.log(this.city);
+    }
+const e = {
+    name: 'Prateek',
+    age: 25,
+    city: 'Mumbai',
+    show: show 
+
+};
+
+e.show();
+
+
